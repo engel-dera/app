@@ -10,7 +10,6 @@ st.set_page_config(
 ) 
  
 
-Dtry:
     DB_URL = st.secrets["RISKWATCH_DB_URL"]
 except (FileNotFoundError, KeyError):
     DB_URL = os.environ.get("RISKWATCH_DB_URL")
